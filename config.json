@@ -1,6 +1,119 @@
 {
   "user_name": "Alex",
-  "assistant_name": "Jarvis",
+  "assistant_name": "Chao",
   "tone": "friendly",
-  "code_style": "PEP8"
+  "code_style": "PEP8",
+  "preferred_languages": ["python", "javascript", "typescript"],
+  "project_conventions": {
+    "indent": 2,
+    "quotes": "single",
+    "max_line_length": 80,
+    "variable_naming": "snake_case",
+    "function_naming": "snake_case",
+    "class_naming": "PascalCase",
+    "comment_style": "docstring",
+    "framework_preferences": {
+      "python": ["fastapi", "django", "flask"],
+      "javascript": ["react", "vue", "svelte"],
+      "typescript": ["nextjs", "angular"]
+    }
+  },
+  "response_style": {
+    "brevity": "concise",
+    "examples": true,
+    "explanations": "detailed",
+    "code_snippets": true,
+    "emoji_usage": "moderate",
+    "technical_level": "advanced",
+    "humor_level": "light"
+  },
+  "reasoning_mode": {
+    "default_enabled": true,
+    "depth": "medium",
+    "transparency": "high",
+    "show_work": true,
+    "approach": "step_by_step"
+  },
+  "automation_triggers": {
+    "generate": ["create", "make", "generate"],
+    "refactor": ["refactor", "improve", "optimize"],
+    "run": ["execute", "run", "start"],
+    "analyze": ["analyze", "inspect", "review"],
+    "fix": ["fix", "debug", "solve"],
+    "explain": ["explain", "teach", "clarify"],
+    "summarize": ["summarize", "digest", "shorten"],
+    "document": ["document", "comment", "annotate"],
+    "format": ["format", "pretty", "beautify"]
+  },
+  "personalization": {
+    "remember_context": true,
+    "context_window": 5,
+    "greetings": ["Hey Chao", "Chao", "Assistant"],
+    "learning_preferences": {
+      "learn_from_corrections": true,
+      "adapt_style_over_time": true,
+      "track_common_tasks": true
+    },
+    "conversation_history": {
+      "save_history": true,
+      "max_history_items": 100,
+      "privacy_level": "local_only"
+    }
+  },
+  "ai_settings": {
+    "model": {
+      "base_model": "Qwen3-8B",
+      "use_4bit": true,
+      "context_length": 2048,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "thinking_temperature": 0.6,
+      "thinking_top_p": 0.95
+    },
+    "abilities": {
+      "code_generation": true,
+      "code_completion": true,
+      "code_analysis": true,
+      "file_operations": true,
+      "internet_search": false,
+      "tool_usage": true
+    }
+  },
+  "environment": {
+    "preferred_ide": "vscode",
+    "terminal": "powershell",
+    "os": "windows",
+    "project_root": "/c:/Users/Chao/Desktop/WebDev/ChaoAI",
+    "backup_directory": "backups",
+    "templates_directory": "templates"
+  },
+  "templates": {
+    "python_script": {
+      "header": "#!/usr/bin/env python3\n'''\n{{description}}\n'''\n\n",
+      "imports": ["import os", "import sys"],
+      "main": "if __name__ == \"__main__\":\n    main()"
+    },
+    "react_component": {
+      "style": "functional",
+      "imports": ["React", "useState", "useEffect"],
+      "styling": "tailwind"
+    }
+  },
+  "security": {
+    "ask_before_execution": true,
+    "restricted_directories": ["confidential", "private"],
+    "allowed_execution": ["python", "node", "npm"]
+  },
+  "notification": {
+    "completion_sound": true,
+    "error_notifications": true,
+    "success_messages": true,
+    "log_interactions": true
+  },
+  "performance": {
+    "cache_responses": true,
+    "optimize_for_speed": true,
+    "background_processing": true,
+    "low_memory_mode": false
+  }
 }
